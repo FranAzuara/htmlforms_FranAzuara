@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container my-4" style="border-radius: 0.5rem;">
+        <form class="row g-3" action="welcom.html" method="get"
+            style="border-style: solid; border-width: 1px; border-radius: 3px; border-color: grey;">
+            <div style="background-color: lightgray; margin: 0;">
+                <h1>Payment form Example</h1>
+            </div>
+            <div style="border-top-style: solid; border-bottom-style: solid; border-width: 1px; border-color: grey; margin: 0;">
+                <div class="alert alert-danger my-3">
+                    <p>Some fields are missing</p>
+                </div>
+                <div class="d-flex">
+                    <div class="col-md-5">
+                        <label for="Card" class="form-label">Card #</label>
+                        <input id="Card" class="form-control" name="Card" placeholder="XXX-XXX-XXX-XXX" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="CVC" class="form-label">CVC #</label>
+                        <input id="CVC" class="form-control" name="CVC" placeholder="123">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="Amount" class="form-label">Amount #</label>
+                        <input id="Amount" class="form-control" name="Amount" placeholder="Amount">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="FirstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="FirstName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="City" class="form-label">City</label>
+                            <input type="text" class="form-control" id="City">
+                        </div>
+                        <p>We accept:</p>
+                        <div class="col-md-6 justify-content-md-center bg-secondary" style="padding: 5px;border-radius: 0.5rem;">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard fa-xl"></i></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa fa-xl"></i></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-paypal fa-xl"></i></label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-google-pay fa-2xl"></i></label>
+                          </div>
+                        </div>  
+                    </div>
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="LastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="FirstName">
+                        </div>
+                        <div class="d-flex">
+                            <div class="mb-3 col-6">
+                                <label for="State" class="form-label">State</label>
+                                <select class="form-select" aria-label="Default select example" id="State">
+                                    <option selected>Pick a state</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="mb-3 col-6">
+                                <label for="PostalCode" class="form-label">Postal Code</label>
+                                <input type="text" class="form-control" id="PostalCode">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Message" class="form-label">Message</label>
+                            <textarea class="form-control" id="Message" style="height: 100px"></textarea>
+                            <p style="color: grey;">Add any notes here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-md-end" style="background-color: lightgray; margin-top: 0; padding: 10px;">
+                <button class="btn btn-secondary me-md-2" type="button">cancel</button>
+                <button class="btn btn-primary" type="button">Send</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
